@@ -1,0 +1,180 @@
+// $ sass --watch sass/.:style/. --style  expanded
+$font13:13px;
+$max-width:100%;
+$color-red:red;
+.header {
+    overflow: hidden;
+}
+
+.header-top {
+    font-size: $font13;
+    background-color: #f5f5f5;
+    line-height: 36px;
+    height: 40px;
+    color: #333;
+}
+
+.h_t_l {
+    float: left;
+    a {
+        color: #333;
+    }
+}
+
+.h_t_r {
+    float: right;
+    font-size: $font13;
+}
+
+.h_t_l {
+    a {
+        padding-left: 8px;
+    }
+}
+
+.h_t_r ul {
+    overflow: hidden;
+}
+
+.h_t_r li {
+    float: left;
+}
+
+.h_t_r a {
+    color: #333;
+    border-right: 1px solid #aaa;
+    padding: 0 10px 0 10px;
+}
+
+.down_load_hpg {
+    display: none;
+    position: absolute;
+    left: 1280px;
+}
+
+.icon-dianhua_ {
+    border-right: 1px solid #aaa;
+    padding: 0 10px 0 10px;
+}
+
+.tel_icon {
+    font-size: $font13;
+}
+
+.d_l_hgp:hover .down_load_hpg {
+    display: block;
+}
+
+.cus_c_box:hover .cus_center {
+    display: block;
+}
+
+.header-middle {
+    height: 200px;
+    padding: 30px 0 19px 0;
+}
+
+.header-middle div {
+    float: left;
+}
+
+.header-m-c .search {
+    width: 390px;
+    height: 19px;
+    padding: 8px 0;
+    border: 1px solid $color-red;
+    border-radius: 20px;
+    margin-left: 200px;
+}
+
+.search span:nth-child(1) {
+    color: #888;
+    font-size: $font13;
+    margin-left: 10px;
+}
+
+.search span:nth-child(2) {
+    font-size: 20px;
+    background-color: $color-red;
+    display: block;
+    width: 80px;
+    height: 37px;
+    text-indent: 15px;
+    line-height: 37px;
+    float: right;
+    position: relative;
+    top: -8px;
+    border-radius: 0 20px 20px 0;
+}
+
+.header-m-c p {
+    margin-left: 200px;
+}
+
+.header-m-c p:nth-child(2) {
+    margin-top: 5px;
+}
+
+.header-m-c p a {
+    color: #888;
+    font-size: $font13;
+    margin: 5px 4px 0 5px;
+}
+
+.header-m-r {
+    width: 125px;
+    height: 39px;
+    line-height: 39px;
+    border: 2px solid $color-red;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.header-m-r a {
+    display: block;
+    width: 125px;
+    color: #333;
+}
+
+.header-m-r .iconfont {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.header-bottom {
+    overflow: hidden;
+}
+
+.header-bottom ul {
+    overflow: hidden;
+}
+
+.header-bottom ul:nth-child(1) li {
+    float: left;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 21px;
+    color: #333;
+}
+
+.line {
+    width: $max-width;
+    height: 2px;
+    background-color: $color-red;
+}
+
+.nav {
+    background-color: $color-red;
+    line-height: 40px;
+}
+
+.index_type_ul .li_has_down {
+    clear: both;
+    position: absolute;
+}
+
+.index_type_ul .li_has_down a {
+    display: block;
+}

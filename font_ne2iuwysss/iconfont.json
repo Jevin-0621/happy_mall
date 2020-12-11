@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "464182",
+      "name": "圣诞简化-回到顶部",
+      "font_class": "shengdanjianhuahuidaodingbu",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "485763",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "785024",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "7952307",
+      "name": "电话",
+      "font_class": "dianhua_",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "9454431",
+      "name": "账号",
+      "font_class": "zhanghao",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "11195033",
+      "name": "耳机",
+      "font_class": "erji",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}
