@@ -9,15 +9,20 @@
     <meta name="description" content="快乐购商城">
     <link rel="stylesheet" href="./style/index1.css">
     <link rel="stylesheet" href="./font_ne2iuwysss/iconfont.css">
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script> -->
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
+
 </head>
 
 <body>
     <!-- 顶部区域 -->
     <div class="header">
         <!--未登陆 end-->
-
-
         <div class="header-top">
             <div class="wrapper">
                 <!--未登陆-->
@@ -73,7 +78,7 @@
         </div>
         <div class="header-bottom wrapper ">
             <ul>
-                <li class="nav"><a href=""> 所有分类</a></li>
+                <li class="nav-li"><a href=""> 所有分类</a></li>
                 <li><a href="">TV精选</a></li>
                 <li><a href="">商品推荐</a></li>
                 <li><a href="">跨境美妆</a></li>
@@ -976,41 +981,342 @@
         <div class="line "></div>
 
     </div>
-    </div>
     <!-- banner区域 -->
-    <div class="banner wrapper "></div>
+    <div class="banner wrapper ">
+        <div class="banner-t">
+            <p>
+                <i>|TV正在直播</i>
+                <span>直播下单更优惠</span>
+            </p>
+        </div>
+        <div class="banner-l">
+            <h2>正在播出商品</h2>
+            <img src="https://ecimg.happigo.com/data/upload//shop/store/goods/1/9/308509/1_main_308509_1280.jpg" alt="">
+            <p class="t1">摩登奇遇 时尚特卖</p>
+            <p class="t2">萨佐藤蔓花枝重工刺绣交叉领羊毛上衣</p>
+            <div class="price">
+                <span class="span1">￥1599</span>
+                <span class="span2"><del>￥1999</del></span>
+            </div>
+            <a href="javascript:;" class="buy">立即订购</a>
+            <a href="" class="cust">手机下单在线支付最高可减20元</a>
+        </div>
+        <div class="banner-c">
+            <!-- 8张大图 -->
+            <ul>
+                <li style="opacity: 1;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/371d7f104bd8744c938bfa743658f540.jpg?w=2452&h=920" alt=""></li>
+                <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d01b4f4d20d1c909454b296f34143004.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
+                <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ca9f53f40b08b09d9254f7b6b79c34e2.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
+                <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec39b7eb802279eb693520915afdfa07.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
+                <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0ef4160c861b998239bce9adb82341e7.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
+                <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d01b4f4d20d1c909454b296f34143004.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
+                <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/371d7f104bd8744c938bfa743658f540.jpg?w=2452&h=920" alt=""></li>
+                <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d01b4f4d20d1c909454b296f34143004.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
+            </ul>
+            <!-- 8个小圆圈 -->
+            <ol>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+            </ol>
+            <!-- 两个左右切换箭头 -->
+            <div href="javascript:;" class="left">&lt;</div>
+            <div href="javascript:;" class="right">&gt;</div>
+        </div>
+        <div class="banner-r">
+            <h2>即将播出</h2>
+            <img src="https://ecimg.happigo.com/data/upload//shop/store/goods/1/240/331740/1_main_01_1280.jpg" alt="">
+            <p class="t1">摩登奇遇 时尚特卖</p>
+            <p class="t2">加拿大LACHARMANTE郊狼毛领尊贵女款95%白鹅绒服（上新了衣橱）</p>
+            <div class="price">
+                <span class="span1">￥198</span>
+                <span class="span2"><del>￥398</del></span>
+            </div>
+            <a href="javascript:;" class="buy">立即订购</a>
+            <a href="" class="cust">手机下单更便捷</a>
+        </div>
+    </div>
     <!-- 主体区域 -->
     <main class="wrapper ">
         <!-- 今日热销 -->
-        <div class="living_list "></div>
+        <div class="living_list ">
+            <div class="banner-t">
+                <p>
+                    <i>|商品预告</i>
+                    <span>直播下单更优惠</span>
+                    <span>&lt;</span>
+                    <a class="active" href="javascript:;"><span>12-06</span><span>星期日</span></a>
+                    <a href="javascript:;"><span>12-06</span><span>星期日</span></a>
+                    <a href="javascript:;"><span>12-06</span><span>星期日</span></a>
+                    <a href="javascript:;"><span>12-06</span><span>星期日</span></a>
+                    <a href="javascript:;"><span>12-06</span><span>星期日</span></a>
+                    <a href="javascript:;"><span>12-06</span><span>星期日</span></a>
+                    <a href="javascript:;"><span>12-06</span><span>星期日</span></a>
+                    <span>&gt;</span>
+                </p>
+                <div class="line "></div>
+            </div>
+            <div class="list goods-list-1">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </div>
         <!-- 昨日热销 -->
-        <div class="yesterday "></div>
+        <div class="yesterday ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+            <div class="goods-list-2">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
         <!-- 新品好物 -->
-        <div class="new_goods "></div>
+        <div class="new_goods ">
+            <div class="banner-t">
+                <p>
+                    <i>|新品好物</i>
+                </p>
+            </div>
+        </div>
         <!-- 食品健康 -->
-        <div class="food_healthy "></div>
+        <div class="food_healthy ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
         <!-- 个护美妆 -->
-        <div class="beauty "></div>
+        <div class="beauty ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
         <!-- 餐厨烹饪 -->
-        <div class="cook "></div>
+        <div class="cook ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
         <!-- 服饰珠宝 -->
-        <div class="treasure "></div>
+        <div class="treasure ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
         <!-- 日用家居 -->
-        <div class="everyday "></div>
+        <div class="everyday ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
         <!-- 家纺套件 -->
-        <div class="home "></div>
+        <div class="home ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
         <!-- 数码家电 -->
-        <div class="tv "></div>
+        <div class="tv ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
         <!-- 芒果汽车 -->
-        <div class="car "></div>
+        <div class="car ">
+            <div class="banner-t">
+                <p>
+                    <i>|昨日热销</i>
+                </p>
+            </div>
+        </div>
     </main>
     <!-- 底部区域 -->
-    <div class="bottom wrapper "></div>
-    <!-- 最底部版权区域 -->
-    <div class="footer wrapper ">
+    <div class="bottom">
+        <div class="footer0 wrapper">
+            <div class="footer0-li">
+                <i class="iconfont icon-dianhua_"></i>
+                <p class="footer0_p1">成功上市</p>
+                <p class="footer0_p2">股票代码300413</p>
+            </div>
+            <div class="footer0-li">
+                <i class="iconfont icon-dianhua_"></i>
+                <p class="footer0_p1">快乐购严选</p>
+                <p class="footer0_p2">正品行货 品质保证</p>
+            </div>
+            <div class="footer0-li">
+                <i class="iconfont icon-dianhua_"></i>
+                <p class="footer0_p1">15天无理由退款</p>
+                <p class="footer0_p2">为您提供售后无忧保障</p>
+            </div>
+            <div class="footer0-li">
+                <i class="iconfont icon-dianhua_"></i>
+                <p class="footer0_p1">满129包邮</p>
+                <p class="footer0_p2">在线支付 购物包邮</p>
+            </div>
 
+            <div class="footer0-li">
+                <i class="iconfont icon-dianhua_"></i>
+                <p class="footer0_p1">24小时微笑服务</p>
+                <p class="footer0_p2">365*24小时人工服务</p>
+            </div>
+        </div>
+        <div class="footer1 wrapper">
+            <div class="footer1_l ClearFix">
+                <dl class="helpDL">
+                    <dt>
+                    <h5>使用帮助</h5>
+                </dt>
+                    <dd><a href="https://www.happigo.com/news-58.html" title="税费收取规则" target="_blank"> 税费收取规则 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-43.html" title="新手指南" target="_blank"> 新手指南 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-6.html" title="常见问题" target="_blank"> 常见问题 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-7.html" title="用户协议" target="_blank"> 用户协议 </a></dd>
+                </dl>
+                <dl class="helpDL">
+                    <dt>
+                    <h5>会员服务</h5>
+                </dt>
+                    <dd><a href="https://www.happigo.com/news-49.html" title="快乐币政策" target="_blank"> 快乐币政策 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-12.html" title="会员权益" target="_blank"> 会员权益 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-11.html" title="会员等级" target="_blank"> 会员等级 </a></dd>
+                </dl>
+                <dl class="helpDL">
+                    <dt>
+                    <h5>支付方式</h5>
+                </dt>
+                    <dd><a href="https://www.happigo.com/news-44.html" title="快乐币支付" target="_blank"> 快乐币支付 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-28.html" title="货到付款" target="_blank"> 货到付款 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-17.html" title="在线支付" target="_blank"> 在线支付 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-45.html" title="优惠券支付" target="_blank"> 优惠券支付 </a></dd>
+                </dl>
+                <dl class="helpDL">
+                    <dt>
+                    <h5>配送方式</h5>
+                </dt>
+                    <dd><a href="https://www.happigo.com/news-32.html" title="费用说明" target="_blank"> 费用说明 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-31.html" title="配送说明" target="_blank"> 配送说明 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-26.html" title="包邮政策" target="_blank"> 包邮政策 </a></dd>
+                </dl>
+                <dl class="helpDL">
+                    <dt>
+                    <h5>售后服务</h5>
+                </dt>
+                    <dd><a href="https://www.happigo.com/news-59.html" title="电子发票" target="_blank"> 电子发票 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-20.html" title="退货办理" target="_blank"> 退货办理 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-19.html" title="退货政策" target="_blank"> 退货政策 </a></dd>
+                    <dd><a href="https://www.happigo.com/news-18.html" title="售后咨询" target="_blank"> 售后咨询 </a></dd>
+                </dl>
+            </div>
+
+            <div class="footer1_r">
+                <ul>
+                    <li>
+                        <h2>手机快乐购</h2> <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_01.png">
+                        <p>下载移动客户端</p>
+                    </li>
+                    <li>
+                        <h2>快乐购微信</h2> <img src="https://ecimg.happigo.com/resource/web/new_web/images/footer_ewm_02.png">
+                        <p>快乐购微信</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="footer_nav">
+                <div class="w720">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" target="_blank">关于快乐购</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">投资者关系</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a target="_blank" href="javascript:;">自营品牌招商</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;">联系我们</a>
+                            <span class="line"></span>
+                        </li>
+                        <li>
+                            <a target="_blank" href="javascript:;">营业证照</a>
+                        </li>
+                        <p></p>
+                    </ul>
+                </div>
+            </div>
+            <div class="w1090">
+                <p>
+                    <span class="font_arial">Copyright© 2006-2018 happigo. All Rights Reserved </span></p>
+                <p>
+                    免费服务热线: 400-705-1111 | 固话也可拨打: 400-705-8800
+                    <span class="font_arial">E-Mail: service@happigo.com</span><br>
+                    <a href="http://beian.miit.gov.cn/" style="color: #C8C8C8" target="_blank">湘ICP备19013404号-2
+                        <img class="jh" src="https://ecimg.happigo.com/resource/web/images/jh.png">
+                    </a>
+                    <a href="javascript:;" style="color: #C8C8C8" target="_blank">湘公网安备 43010502000556号</a>
+                    <a href="javascript:;" style="color: #C8C8C8" target="_blank">食品经营许可证 JY14301000273760</a>
+                </p>
+                <p class="footer_p wrapper">
+                    <a id="_pingansec_bottomimagesmall_brand" href="http://si.trustutn.org/info?sn=274180122031647490426&amp;certType=1" target="_blank">
+                        <img src="https://v.trustutn.org/images/cert/brand_bottom_small.jpg">
+                    </a>
+                    <a id="_pingansec_bottomimagesmall_brand" href="https://ecimg.happigo.com/resource/web/images/footer_shuidi.png">
+                        <img src="https://ecimg.happigo.com/resource/web/images/footer_shuidi.png">
+                    </a>
+                </p>
+            </div>
+        </div>
     </div>
+
+
+    <!-- 最底部版权区域 -->
+    <!--  <div class="footer wrapper ">
+
+    </div> -->
     <script src="./script/index.js"></script>
+    <script src="./script/list_module.js"></script>
 </body>
 
 </html>

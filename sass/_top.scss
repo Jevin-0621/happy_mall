@@ -4,6 +4,7 @@ $max-width:100%;
 $color-red:red;
 .header {
     overflow: hidden;
+    background-color: #fff;
 }
 
 .header-top {
@@ -65,26 +66,35 @@ $color-red:red;
     display: block;
 }
 
-.cus_c_box:hover .cus_center {
-    display: block;
+.cus_c_box:hover {
+    .cus_center {
+        display: block;
+    }
 }
 
 .header-middle {
-    height: 200px;
+    height: 100px;
     padding: 30px 0 19px 0;
+    .header-middle div {
+        float: left;
+    }
 }
 
-.header-middle div {
+.header-m-l,
+.header-m-c,
+.header-m-r {
     float: left;
 }
 
-.header-m-c .search {
-    width: 390px;
-    height: 19px;
-    padding: 8px 0;
-    border: 1px solid $color-red;
-    border-radius: 20px;
-    margin-left: 200px;
+.header-m-c {
+    .search {
+        width: 390px;
+        height: 19px;
+        padding: 8px 0;
+        border: 1px solid $color-red;
+        border-radius: 20px;
+        margin-left: 200px;
+    }
 }
 
 .search span:nth-child(1) {
@@ -111,14 +121,20 @@ $color-red:red;
     margin-left: 200px;
 }
 
-.header-m-c p:nth-child(2) {
-    margin-top: 5px;
+.header-m-c {
+    p:nth-child(2) {
+        margin-top: 5px;
+    }
 }
 
-.header-m-c p a {
-    color: #888;
-    font-size: $font13;
-    margin: 5px 4px 0 5px;
+.header-m-c {
+    p {
+        a {
+            color: #888;
+            font-size: $font13;
+            margin: 5px 4px 0 5px;
+        }
+    }
 }
 
 .header-m-r {
@@ -142,21 +158,23 @@ $color-red:red;
 }
 
 .header-bottom {
+    margin-top: 20px;
     overflow: hidden;
+    ul {
+        overflow: hidden;
+    }
 }
 
-.header-bottom ul {
-    overflow: hidden;
-}
-
-.header-bottom ul:nth-child(1) li {
-    float: left;
-    width: 170px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 21px;
-    color: #333;
+.header-bottom ul:nth-child(1) {
+    li {
+        float: left;
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 21px;
+        color: #333;
+    }
 }
 
 .line {
@@ -165,16 +183,24 @@ $color-red:red;
     background-color: $color-red;
 }
 
-.nav {
+.nav-li {
     background-color: $color-red;
     line-height: 40px;
+    position: relative;
 }
 
-.index_type_ul .li_has_down {
-    clear: both;
+.index_type_ul {
     position: absolute;
-}
-
-.index_type_ul .li_has_down a {
-    display: block;
+    top: 248px;
+    background-color: #fff;
+    .li_has_down {
+        clear: both;
+        // z-index: 3;
+        // zoom: 1;
+        border-bottom: 1px solid $color-red;
+    }
+    .index_type_ul .li_has_down a {
+        display: block;
+        margin: 10px;
+    }
 }

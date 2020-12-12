@@ -1,0 +1,168 @@
+  $font14:14px;
+  .banner {
+      overflow: hidden;
+  }
+  
+  .banner-t {
+      margin-top: 20px;
+      i {
+          font-size: 22px;
+          font-weight: 900;
+          line-height: 32px;
+      }
+      span {
+          font-size: $font13;
+          color: #666;
+          margin-left: 10px;
+      }
+  }
+  
+  .banner-l,
+  .banner-c,
+  .banner-r {
+      float: left;
+  }
+  
+  .banner-l,
+  .banner-r {
+      height: 416px;
+      width: 220px;
+      background-color: #fff;
+      //   background-color: darkgoldenrod;
+  }
+  
+  .banner-c {
+      width: 650px;
+      height: 416px;
+      //   background-color: darkgreen;
+  }
+  
+  .banner img {
+      width: 192px;
+      height: 192px;
+      margin: 0 auto;
+  }
+  
+  .banner h2 {
+      padding: 0 14px;
+      margin: 8px 0;
+      font-size: $font13;
+      font-weight: 500;
+      color: #f00;
+  }
+  
+  .t1 {
+      font-size: $font14;
+      color: #666;
+      height: 14px;
+      margin: 5px 0 5px 15px;
+  }
+  
+  .t2 {
+      font-size: $font14;
+      color: #333;
+      height: 14px;
+      margin: 5px 0 5px 15px;
+      width: 192px;
+      overflow: hidden;
+  }
+  
+  .price {
+      font-size: $font14;
+      font-weight: bold;
+      margin-left: 15px;
+  }
+  
+  .price .span1 {
+      color: $color-red;
+      font-size: 22px;
+  }
+  
+  .banner a {
+      width: 192px;
+      height: 32px;
+      border: 1px solid $color-red;
+      margin: 20px auto;
+      display: block;
+  }
+  
+  .buy {
+      line-height: 32px;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      background-color: $color-red;
+  }
+  
+  .cust {
+      font-size: $font13;
+      line-height: 32px;
+      text-align: center;
+      color: $color-red;
+  }
+  
+  .banner-c {
+      width: 648px;
+      height: 416px;
+      border: 1px solid black;
+      //   margin: 20px auto;
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .banner-c img {
+      width: 648px;
+      height: 416px;
+  }
+  
+  .banner-c ul li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      /* opacity: 0; */
+      transition: all 1s;
+  }
+  
+  .banner-c ol {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+  }
+  
+  .banner-c ol li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      background-color: blue;
+      border-radius: 50%;
+      margin-right: 5px;
+      text-indent: -999em;
+      cursor: pointer;
+  }
+  
+  .banner-c ol li.active {
+      background-color: chartreuse;
+  }
+  
+  .left,
+  .right {
+      font-size: 100px;
+      color: #fff;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+      margin-top: -60px;
+  }
+  
+  .left {
+      left: 20px;
+  }
+  
+  .right {
+      right: 20px;
+  }
+  
+  .left:hover,
+  .right:hover {
+      color: black;
+  }

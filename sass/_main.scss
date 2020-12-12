@@ -1,0 +1,66 @@
+.living-list {
+    a {
+        display: block;
+        span {
+            display: block;
+        }
+    }
+    .active {
+        border-top: 2px solid #f00;
+        border-left: 2px solid #f00;
+        border-right: 2px solid #f00;
+    }
+}
+
+.goods-list-1 {
+    ul {
+        li {
+            width: 282px;
+            height: 380px;
+            // background-color: darkgoldenrod;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.list {
+    font-size: 14px;
+    ul {
+        overflow: hidden;
+        li {
+            width: 236px;
+            padding: 10px;
+            float: left;
+            margin: 0 14px 10px 0;
+            border: 1px solid #ccc;
+            height: 310px;
+            position: relative;
+            a {
+                img {
+                    width: 230px;
+                    height: 220px;
+                }
+                span {
+                    font-size: 22px;
+                    color: #df0010;
+                }
+            }
+            p {
+                width: 200px;
+                height: 48px;
+                line-height: 24px;
+                overflow: hidden;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                display: block;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+}
