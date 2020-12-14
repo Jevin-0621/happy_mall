@@ -20,18 +20,53 @@
 </head>
 
 <body>
+    <!-- 右侧导航 -->
+    <div class="r-nav">
+        <p>
+            <a href="">
+                <span class="iconfont icon-zhanghao"></span>
+                <span class="ttt">账号</span>
+            </a>
+        </p>
+        <p class="car">
+            <a href="">
+                <span class="iconfont icon-gouwuche"></span>
+                <span class="ttt">购物车</span>
+            </a>
+        </p>
+        <p>
+            <a href="">
+                <span class="iconfont icon-shoucang"></span>
+                <span class="ttt">收藏</span>
+            </a>
+        </p>
+        <p class="go-top">
+            <a href="#">
+                <span class="iconfont icon-shengdanjianhuahuidaodingbu"></span>
+            </a>
+        </p>
+    </div>
     <!-- 顶部区域 -->
     <div class="header">
-        <!--未登陆 end-->
         <div class="header-top">
             <div class="wrapper">
                 <!--未登陆-->
-                <div class="h_t_l">
+                <div class="h_t_l admin-1" style="display: none;">
                     <div class="login_1"> <span class="h_t_l_wz">欢迎来到快乐购！</span>
-                        <a href="./login/" target="_blank" class="a_login">[登录] </a>
-                        <a href="./register/" class="a_reg">[免费注册]</a>
+                        <a href="./login.html" target="_blank" class="a_login">[登录] </a>
+                        <a href="./register.html" class="a_reg">[免费注册]</a>
                     </div>
                 </div>
+                <!-- 已登录 -->
+                <div class="h_t_l admin-2">
+                    <div class="login_1"> <span class="h_t_l_wz admin-name">{}</span>
+                        <span class="h_t_l_wz">欢迎您来到快乐购！</span>
+                        <span class="layout">退出</span>
+                        <!-- <a href="./login.html" target="_blank" class="a_login">[登录] </a>
+                        <a href="./register.html" class="a_reg">[免费注册]</a> -->
+                    </div>
+                </div>
+
                 <div class="h_t_r">
                     <ul>
                         <li><a href="javascript:;" target="_blank">合作招商</a><span class="line"></span> </li>
@@ -59,7 +94,6 @@
 
 
         <div class="header-middle wrapper ">
-
             <div class="header-m-l">
                 <img src="https://ecimg.happigo.com/resource/web/new_web/images/logo.png" style="width:146px;height:75px">
             </div>
@@ -77,910 +111,44 @@
             </div>
         </div>
         <div class="header-bottom wrapper ">
-            <ul>
+            <ul class="menu">
                 <li class="nav-li"><a href=""> 所有分类</a></li>
-                <li><a href="">TV精选</a></li>
-                <li><a href="">商品推荐</a></li>
-                <li><a href="">跨境美妆</a></li>
-                <li><a href="">地方特产</a></li>
+                <li><a href="javascript:;">TV精选</a></li>
+                <li><a href="javascript:;">商品推荐</a></li>
+                <li><a href="javascript:;">跨境美妆</a></li>
+                <li><a href="javascript:;">地方特产</a></li>
             </ul>
             <!--首页分类-->
-            <div class="index_type" style="display: none;">
-                <!--tyep-->
-                <ul class="index_type_ul">
-                    <li class="li_has_down">
-                        <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
-                        <a class="type_color" target="_blank" href="/list-1097/">
-                            <i class="iconfont i_type i_type_mwcf"></i>个护美妆<i class="iconfont icontypearrow"></i>
-                        </a>
+            <ul class="index_type" style="display: none;">
+                <li>个护美妆<span>&gt;</span></li>
+                <li>食品健康<span>&gt;</span></li>
+                <li>餐厨日用<span>&gt;</span></li>
+                <li>服饰配饰<span>&gt;</span></li>
+                <li>布艺家纺<span>&gt;</span></li>
+                <li>家电数码<span>&gt;</span></li>
+                <li>品牌坊<span>&gt;</span></li>
+                <li>品牌坊<span>&gt;</span></li>
+                <li>品牌坊<span>&gt;</span></li>
+            </ul>
 
-                        <div class="nav_type_list" style="display: none;">
-                            <ul class="se_type">
-                                <li class="ClearFix">
-                                    <a>面部护理<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-93/">面膜</a>
-                                        <a href="/list-90/">乳液面霜</a>
-                                        <a href="/list-94/">精华</a>
-                                        <a href="/list-96/">护肤套组</a>
-                                        <a href="/list-97/">防晒隔离</a>
-                                        <a href="/list-89/">爽肤水</a>
-                                        <a href="/list-95/">洁面乳</a>
-                                        <a href="/list-88/">眼部护理</a>
-                                        <a href="/list-92/">眼膜</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>香水彩妆<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-121/">唇膏唇彩</a>
-                                        <a href="/list-126/">遮瑕</a>
-                                        <a href="/list-127/">粉底粉饼</a>
-                                        <a href="/list-125/">睫毛膏</a>
-                                        <a href="/list-124/">眉笔</a>
-                                        <a href="/list-122/">眼影/眼线</a>
-                                        <a href="/list-128/">彩妆工具</a>
-                                        <a href="/list-120/">卸妆</a>
-                                        <a href="/list-117/">女士香水</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>美发护发<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-99/">洗发水</a>
-                                        <a href="/list-100/">护发素</a>
-                                        <a href="/list-101/">洗护套装</a>
-                                        <a href="/list-103/">美发器械</a>
-                                        <a href="/list-104/">电吹风</a>
-                                        <a href="/list-102/">染发</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>身体护理<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-233/">私密护理</a>
-                                        <a href="/list-232/">手工皂</a>
-                                        <a href="/list-230/">美容养颜</a>
-                                        <a href="/list-231/">磨砂膏</a>
-                                        <a href="/list-110/">沐浴露</a>
-                                        <a href="/list-108/">手足护理</a>
-                                        <a href="/list-109/">身体乳</a>
-                                        <a href="/list-105/">香薰精油</a>
-                                        <a href="/list-113/">卫生巾</a>
-                                        <a href="/list-106/">纤体瘦身</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>美容工具<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-137/">美容仪</a>
-                                        <a href="/list-139/">洁面仪</a>
-                                        <a href="/list-140/">理发器</a>
-                                        <a href="/list-133/">剃须刀</a>
-                                        <a href="/list-132/">剃毛器</a>
-                                        <a href="/list-134/">喷雾器</a>
-                                        <a href="/list-138/">美容配件</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>口腔护理<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-115/">牙膏</a>
-                                    </div>
-                                </li>
+            <div class="cartlist" style="display: none;">
+                <div class="item"><a href="list.html">模拟跳转商品列表页</a></div>
+                <div class="item">第二块内容</div>
+                <div class="item">第三块内容</div>
+                <div class="item">第四块内容</div>
+                <div class="item">354325432532454325</div>
+                <div class="item">gfsdgfdsgdsfgdsfgsdfg</div>
+                <div class="item">sdfgfdsgdsfg</div>
+                <div class="item">ytururyrrtyuytyuyturetewrtewrtrewt</div>
+                <div class="item">第四dfsgdfg块内容</div>
 
-                            </ul>
-
-                            <div class="hot_brand">
-                                <ul class="ul_h_brand ClearFix">
-                                    <li>
-                                        <a>
-                                            <img width="78 " src="" alt="京城之霜 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78" src="" alt="兰芝">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src="" alt="兰蔻 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78" src="" alt="雅诗兰黛">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src="" alt="海蓝之谜 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78" src="" alt="娇兰">
-                                        </a>
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                        </div>
-
-                    </li>
-                    <li class="li_has_down">
-                        <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
-                        <a class="type_color" target="_blank" href="/list-1088/">
-                            <i class="iconfont i_type i_type_mwcf"></i>食品健康<i class="iconfont icontypearrow"></i>
-                        </a>
-
-                        <div class="nav_type_list" style="display: none;">
-                            <ul class="se_type">
-
-                                <li class="ClearFix">
-                                    <a>地方特产<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-236/">农贸产品</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>饮料冲调<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-66/">牛奶/酸奶</a>
-                                        <a href="/list-71/">麦片/代餐粉</a>
-                                        <a href="/list-69/">蜂蜜</a>
-                                        <a href="/list-67/">冲调饮品</a>
-                                        <a href="/list-68/">红糖/黑糖</a>
-                                        <a href="/list-70/">咖啡</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>粮油调味<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-72/">米面</a>
-                                        <a href="/list-73/">五谷</a>
-                                        <a href="/list-74/">食用油</a>
-                                        <a href="/list-75/">速食食品</a>
-                                        <a href="/list-76/">南北干货</a>
-                                        <a href="/list-77/">调料</a>
-                                        <a href="/list-223/">腊味</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>酒水茗茶<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-64/">白酒</a>
-                                        <a href="/list-65/">进口红酒</a>
-                                        <a href="/list-222/">国产红酒</a>
-                                        <a href="/list-60/">啤酒</a>
-                                        <a href="/list-62/">黑茶/普洱</a>
-                                        <a href="/list-61/">红茶/绿茶</a>
-                                        <a href="/list-63/">花草茶</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>休闲食品<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-55/">坚果/果干</a>
-                                        <a href="/list-56/">饼干糕点</a>
-                                        <a href="/list-57/">糖果/巧克力</a>
-                                        <a href="/list-58/">零食</a>
-                                        <a href="/list-59/">麻辣零食</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>营养保健<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-84/">红枣/枸杞</a>
-                                        <a href="/list-81/">女性保养</a>
-                                        <a href="/list-83/">阿胶/燕窝</a>
-                                        <a href="/list-86/">传统滋补</a>
-                                        <a href="/list-85/">基础保健</a>
-                                        <a href="/list-82/">瘦身/酵素</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>生鲜食品<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-78/">新鲜果蔬</a>
-                                        <a href="/list-79/">肉类</a>
-                                        <a href="/list-80/">家禽蛋类</a>
-                                        <a href="/list-221/">大闸蟹</a>
-                                        <a href="/list-224/">生鲜水产</a>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                            <div class="hot_brand">
-                                <ul class="ul_h_brand ClearFix">
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" "" alt="中国原产 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="喜善花房 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                        <img width="78 " src="" " alt="边走边淘 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78" src="" alt="恰然">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="黑美人 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="谷林茶坊 ">
-                                        </a>
-                                    </li>
-                                </ul>
-
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li_has_down ">
-                        <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
-                        <a class="type_color " target="_blank " href="/list-1057/ ">
-                            <i class="iconfont i_type i_type_mwcf "></i>餐厨日用<i class="iconfont icontypearrow "></i>
-                        </a>
-
-                        <div class="nav_type_list " style="display: none; ">
-                            <ul class="se_type ">
-
-                                <li class="ClearFix ">
-                                    <a>厨房电器<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-226/ ">保温板</a>
-                                        <a href="/list-28/ ">净水设备</a>
-                                        <a href="/list-31/ ">烤箱/微波炉</a>
-                                        <a href="/list-143/ ">电饭煲</a>
-                                        <a href="/list-144/ ">电压力/电蒸锅</a>
-                                        <a href="/list-30/ ">炉具</a>
-                                        <a href="/list-20/ ">榨汁/原汁机</a>
-                                        <a href="/list-21/ ">料理/研磨机</a>
-                                        <a href="/list-19/ ">破壁/豆浆机</a>
-                                        <a href="/list-22/ ">酵素/酸奶机</a>
-                                        <a href="/list-29/ ">养生/电水壶</a>
-                                        <a href="/list-23/ ">吐司/煮蛋器</a>
-                                        <a href="/list-24/ ">面包/和面机</a>
-                                        <a href="/list-149/ ">电炖/电火锅</a>
-                                        <a href="/list-227/ ">消毒/保洁柜</a>
-                                        <a href="/list-32/ ">洗碗机</a>
-                                        <a href="/list-33/ ">烟灶消热</a>
-                                        <a href="/list-25/ ">冰淇淋机</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>健康保健<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-168/ ">健身用品</a>
-                                        <a href="/list-169/ ">保健按摩</a>
-                                        <a href="/list-170/ ">运动电子</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>烹饪锅具<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-142/ ">透明锅</a>
-                                        <a href="/list-146/ ">炒锅/煎锅</a>
-                                        <a href="/list-147/ ">汤锅/奶锅</a>
-                                        <a href="/list-141/ ">大牌锅具</a>
-                                        <a href="/list-145/ ">高速快锅</a>
-                                        <a href="/list-148/ ">煲</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>清洁收纳<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-156/ ">清洁用品</a>
-                                        <a href="/list-157/ ">收纳用品</a>
-                                        <a href="/list-158/ ">晾晒置物</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>厨房用具<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-10/ ">刀</a>
-                                        <a href="/list-11/ ">砧板/托盘</a>
-                                        <a href="/list-12/ ">保鲜盒/罐</a>
-                                        <a href="/list-229/ ">米箱</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>生活用品<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-150/ ">个人清洁</a>
-                                        <a href="/list-151/ ">厨房用品</a>
-                                        <a href="/list-152/ ">日常用品</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>餐饮用具<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-1/ ">碗碟</a>
-                                        <a href="/list-2/ ">筷勺/刀叉</a>
-                                        <a href="/list-4/ ">运动水杯</a>
-                                        <a href="/list-8/ ">保温杯壶</a>
-                                        <a href="/list-9/ ">焖烧罐</a>
-                                        <a href="/list-3/ ">凉水壶/马克杯</a>
-                                        <a href="/list-5/ ">玻璃杯</a>
-                                        <a href="/list-6/ ">红酒杯</a>
-                                        <a href="/list-7/ ">茶具/咖啡杯</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>家装建材<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-159/ ">照明灯具</a>
-                                        <a href="/list-161/ ">卫浴用品</a>
-                                        <a href="/list-202/ ">其他</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>厨房配件<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-18/ ">保温饭盒</a>
-                                        <a href="/list-13/ ">置物架</a>
-                                        <a href="/list-15/ ">冰箱收纳</a>
-                                        <a href="/list-14/ ">调料收纳</a>
-                                        <a href="/list-16/ ">厨房小工具</a>
-                                        <a href="/list-17/ ">厨房清洁</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>户外休闲<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-165/ ">伞具</a>
-                                        <a href="/list-166/ ">户外用品</a>
-                                        <a href="/list-167/ ">背包</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>家具<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-164/ ">家具</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>家居家饰<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-153/ ">工艺摆件</a>
-                                        <a href="/list-155/ ">创意家居</a>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                            <div class="hot_brand ">
-                                <ul class="ul_h_brand ClearFix ">
-                                    <li>
-                                        <a>
-                                            <img width="78 " src="" alt="三星 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78" src="" alt="康宁">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="双立人 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="菲仕乐 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src="" alt="摩飞 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78" src="" alt="WUJO">
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li_has_down">
-                        <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
-                        <a class="type_color" target="_blank" href="/list-1082/">
-                            <i class="iconfont i_type i_type_mwcf"></i>服装配饰<i class="iconfont icontypearrow"></i>
-                        </a>
-
-                        <div class="nav_type_list" style="display: none;">
-                            <ul class="se_type">
-
-                                <li class="ClearFix">
-                                    <a>女士服装<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-200/">上衣</a>
-                                        <a href="/list-173/">裙装</a>
-                                        <a href="/list-174/">裤装</a>
-                                        <a href="/list-175/">外套</a>
-                                        <a href="/list-176/">羽绒/羊绒</a>
-                                        <a href="/list-177/">皮草/大衣</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>男士服装<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-171/">上衣</a>
-                                        <a href="/list-172/">下装</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>内衣<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-181/">文胸</a>
-                                        <a href="/list-182/">内裤</a>
-                                        <a href="/list-183/">裤袜</a>
-                                        <a href="/list-184/">家居服</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>鞋靴<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-49/">男鞋</a>
-                                        <a href="/list-50/">女鞋</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>箱包<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-185/">旅行箱</a>
-                                        <a href="/list-186/">双肩包</a>
-                                        <a href="/list-187/">单肩包</a>
-                                        <a href="/list-188/">钱包</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>眼镜配饰<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-189/">眼镜</a>
-                                        <a href="/list-190/">配饰</a>
-                                        <a href="/list-201/">其他</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>运动/户外<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-179/">运动服饰</a>
-                                        <a href="/list-180/">泳衣</a>
-                                        <a href="/list-178/">其他</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>钟表<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-53/">男表</a>
-                                        <a href="/list-54/">女表</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix">
-                                    <a>珠宝藏品<i class="iconfont"></i></a>
-                                    <div class="three_type">
-                                        <a href="/list-51/">珠宝饰品</a>
-                                        <a href="/list-52/">投资收藏</a>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-
-                        </div>
-                    </li>
-                    <li class="li_has_down ">
-                        <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
-                        <a class="type_color " target="_blank " href="/list-1058/ ">
-                            <i class="iconfont i_type i_type_mwcf "></i>布艺家纺<i class="iconfont icontypearrow "></i>
-                        </a>
-
-                        <div class="nav_type_list " style="display: none; ">
-                            <ul class="se_type ">
-
-                                <li class="ClearFix ">
-                                    <a>床品套件<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-34/ ">枕头</a>
-                                        <a href="/list-35/ ">套件</a>
-                                        <a href="/list-36/ ">被子</a>
-                                        <a href="/list-37/ ">床垫/床罩</a>
-                                        <a href="/list-38/ ">薄被毯子</a>
-                                        <a href="/list-39/ ">凉席</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>布艺软饰<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-40/ ">窗帘</a>
-                                        <a href="/list-41/ ">地垫</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>抱枕靠垫<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-42/ ">抱枕</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>毛巾浴巾<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-43/ ">毛巾</a>
-                                        <a href="/list-44/ ">浴巾</a>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                            <div class="hot_brand ">
-                                <ul class="ul_h_brand ClearFix ">
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="泰嗨 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="梦洁 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="栖先生 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="博洋家纺 ">
-                                        </a>
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li_has_down ">
-                        <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
-                        <a class="type_color " target="_blank " href="/list-1060/ ">
-                            <i class="iconfont i_type i_type_mwcf "></i>家电数码<i class="iconfont icontypearrow "></i>
-                        </a>
-
-                        <div class="nav_type_list " style="display: none; ">
-                            <ul class="se_type ">
-
-                                <li class="ClearFix ">
-                                    <a>生活家电<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-46/ ">冷暖家电</a>
-                                        <a href="/list-45/ ">清洁电器</a>
-                                        <a href="/list-47/ ">照明电器</a>
-                                        <a href="/list-48/ ">净化加湿器</a>
-                                        <a href="/list-234/ ">健康电器</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>大家电<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-191/ ">冰箱空调</a>
-                                        <a href="/list-192/ ">洗衣机</a>
-                                        <a href="/list-193/ ">电视机</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>手机通讯<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-194/ ">智能手机</a>
-                                        <a href="/list-195/ ">耳机音箱</a>
-                                        <a href="/list-196/ ">数码配件</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a>电脑影音<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href="/list-197/ ">电脑</a>
-                                        <a href="/list-198/ ">音响</a>
-                                        <a href="/list-199/ ">电脑配件</a>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                            <div class="hot_brand ">
-                                <ul class="ul_h_brand ClearFix ">
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="华为 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="格力 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="创维 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="东芝 ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="TCL ">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a>
-                                            <img width="78 " src=" " alt="小天鹅 ">
-                                        </a>
-                                    </li>
-                                </ul>
-
-
-
-                            </div>
-                        </div>
-                    </li>
-                    <li class="li_has_down ">
-                        <!--食品健康 餐厨日用 服装配饰 布艺家纺 家电数码 品牌馆-->
-                        <a class="type_color " target="_blank " href="/list-0/ ">
-                            <i class="iconfont i_type i_type_mwcf "></i>品牌馆<i class="iconfont icontypearrow "></i>
-                        </a>
-
-                        <div class="nav_type_list " style="display: none; ">
-                            <ul class="se_type ">
-                                <li class="ClearFix ">
-                                    <a class="type_tit ">个护美妆<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href=" ">京城之霜</a>
-                                        <a href=" ">兰芝</a>
-                                        <a href=" ">兰蔻</a>
-                                        <a href=" ">雅诗兰黛</a>
-                                        <a href=" ">海蓝之谜</a>
-                                        <a href=" ">娇兰</a>
-                                        <a href=" ">WHOO后</a>
-                                        <a href=" ">吕</a>
-                                        <a href=" ">娇韵诗</a>
-                                        <a href=" ">韩后</a>
-                                        <a href=" ">SK-II</a>
-                                        <a href=" ">CPB</a>
-                                        <a href=" ">诗蒂兰</a>
-                                        <a href=" ">玉兰油</a>
-                                        <a href=" ">美迪惠尔</a>
-                                        <a href=" ">资生堂</a>
-                                        <a href=" ">雪花秀</a>
-                                        <a href=" ">欧莱雅loreal</a>
-                                        <a href=" ">韩束</a>
-                                        <a href=" ">科颜氏</a>
-                                        <a href=" ">迪奥</a>
-                                        <a href=" ">纪梵希</a>
-                                        <a href=" ">蒂佳婷</a>
-                                        <a href=" ">青彩</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a class="type_tit ">食品健康<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href=" ">中国原产</a>
-                                        <a href=" ">喜善花房</a>
-                                        <a href=" ">边走边淘</a>
-                                        <a href=" ">恰然</a>
-                                        <a href=" ">黑美人</a>
-                                        <a href=" ">谷林茶坊</a>
-                                        <a href=" ">蒂芬妮</a>
-                                        <a href=" ">长食坊</a>
-                                        <a href=" ">溢田</a>
-                                        <a href=" ">正官庄</a>
-                                        <a href=" ">松德</a>
-                                        <a href=" ">goodhealth</a>
-                                        <a href=" ">花迹</a>
-                                        <a href=" ">优益</a>
-                                        <a href=" ">正典燕窝</a>
-                                        <a href=" ">雪天</a>
-                                        <a href=" ">BOONBOON</a>
-                                        <a href=" ">紫英庄</a>
-                                        <a href=" ">调心堂</a>
-                                        <a href=" ">苗老表</a>
-                                        <a href=" ">熊爸森林</a>
-                                        <a href=" ">燕时代</a>
-                                        <a href=" ">蜜滋兰</a>
-                                        <a href=" ">瑞琪奥兰</a>
-                                        <a href=" ">火洲游记</a>
-                                        <a href=" ">九芝堂</a>
-                                        <a href=" ">圣元宁</a>
-                                        <a href=" ">棒棰岛</a>
-                                        <a href=" ">全聚德</a>
-                                        <a href=" ">怀山堂</a>
-                                        <a href=" ">济公缘</a>
-                                        <a href=" ">龙泉山</a>
-                                        <a href=" ">战友蘑菇</a>
-                                        <a href=" ">金唐</a>
-                                        <a href=" ">汤姆农场</a>
-                                        <a href=" ">乐奈</a>
-                                        <a href=" ">佰食优</a>
-                                        <a href=" ">海底捞</a>
-                                        <a href=" ">王栏树</a>
-                                        <a href=" ">尚珍</a>
-                                        <a href=" ">臻味</a>
-                                        <a href=" ">怀府街</a>
-                                        <a href=" ">鹤鼎堂</a>
-                                        <a href=" "></a>
-                                        <a href=" ">贝蒂斯</a>
-                                        <a href=" ">阿格利司</a>
-                                        <a href=" ">康农星</a>
-                                        <a href=" ">稻香村</a>
-                                        <a href=" ">德亚</a>
-                                        <a href=" ">汤臣倍健</a>
-                                        <a href=" "></a>
-                                        <a href=" ">燕天使</a>
-                                        <a href=" ">同仁堂</a>
-                                        <a href=" ">福东海</a>
-                                        <a href=" ">张太和</a>
-                                        <a href=" ">万年贡</a>
-                                        <a href=" ">暖男厨房</a>
-                                        <a href=" ">饭爷</a>
-                                        <a href=" ">四洲</a>
-                                        <a href=" ">环球小熊</a>
-                                        <a href=" ">波斯贡</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a class="type_tit ">餐厨日用<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href=" ">三星</a>
-                                        <a href=" ">康宁</a>
-                                        <a href=" ">双立人</a>
-                                        <a href=" ">菲仕乐</a>
-                                        <a href=" ">摩飞</a>
-                                        <a href=" "></a>
-                                        <a href=" ">康巴赫</a>
-                                        <a href=" ">大宇</a>
-                                        <a href=" ">张小泉</a>
-                                        <a href=" ">九阳</a>
-                                        <a href=" ">美的</a>
-                                        <a href=" ">苏泊尔</a>
-                                        <a href=" ">格兰仕</a>
-                                        <a href=" "></a>
-                                        <a href=" "></a>
-                                        <a href=" "></a>" </a>
-                                        <a href=" ">三禾</a>
-                                        <a href=" ">拿铁铁器</a>
-                                        <a href=" ">米技</a>
-                                        <a href=""></a>
-                                        <a href="">小熊</a>
-                                        <a href=""></a>
-                                        <a href=" ">北欧欧慕</a>
-                                        <a href=" ">东菱</a>
-                                        <a href="">碧然德</a>
-                                        <a href=" ">保厨莱欧</a>
-                                        <a href=" ">道尔顿</a>
-                                        <a href=" ">炊大皇</a>
-                                        <a href=" ">荣事达</a>
-                                        <a href="">联创</a>
-                                        <a href="">LUCUKU路卡酷</a>
-                                        <a href=" ">乐扣乐扣</a>
-                                        <a href=" ">膳魔师</a>
-                                        <a href="">虎牌</a>
-                                        <a href=" ">Peacock孔雀</a>
-                                        <a href="">华帝</a>
-                                        <a href="">万和</a>
-                                        <a href="">美菱</a>
-                                        <a href=" ">方太</a>
-                                        <a href=" ">老板</a>
-                                        <a href=" ">利茸</a>
-                                        <a href=""></a>
-                                        <a href=""></a>
-                                        <a href=" ">宝优妮</a>
-                                        <a href=" ">乐美雅</a>
-                                        <a href="">竹元素</a>
-                                        <a href=" ">艾修堂</a>
-                                        <a href=""></a>
-                                        <a href=" ">太力</a>
-                                        <a href=" ">收纳博士</a>
-                                        <a href="">宝家洁</a>
-                                        <a href=" ">吉优百</a>
-                                        <a href=" ">金泰康</a>
-                                        <a href=" ">蓝月亮</a>
-                                        <a href="">攀高</a>
-                                        <a href=" ">喜运亨</a>
-                                        <a href=" ">真柑净</a>
-                                        <a href=" ">锦怡</a>
-                                        <a href=" ">利茸</a>
-                                        <a href=" ">艾芙兰尼</a>
-                                        <a href=" ">蕉下</a>
-                                        <a href=" ">居康</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a class="type_tit ">服装配饰<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href=" ">尚街</a>
-                                        <a href=""></a>
-                                        <a href=" ">茵迪</a>
-                                        <a href=" ">达芙妮</a>
-                                        <a href=" ">凯瑞摩</a>
-                                        <a href=" ">老冯记</a>
-                                        <a href=" ">今升</a>
-                                        <a href="">LuckyOzasec</a>
-                                        <a href=" ">幽衫绮</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a class="type_tit ">布艺家纺<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href=" ">泰嗨</a>
-                                        <a href="">梦洁</a>
-                                        <a href=" ">栖先生</a>
-                                        <a href="">博洋家纺</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a class="type_tit ">家电数码<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href=" ">华为</a>
-                                        <a href=" ">格力</a>
-                                        <a href="">创维</a>
-                                        <a href=" ">东芝</a>
-                                        <a href=""></a>
-                                        <a href="  ">小天鹅</a>
-                                        <a href=" ">达米尼</a>
-                                        <a href="">大宇</a>
-                                        <a href=" ">美的</a>
-                                        <a href="">先锋</a>
-                                        <a href=" ">盎厘斯</a>
-                                        <a href=" ">苏泊尔</a>
-                                        <a href="">摩飞</a>
-                                        <a href="">美菱</a>
-                                        <a href=" ">小狗</a>
-                                        <a href="">凯驰</a>
-                                        <a href=" ">家奈</a>
-                                    </div>
-                                </li>
-                                <li class="ClearFix ">
-                                    <a class="type_tit ">母婴呵护<i class="iconfont "></i></a>
-                                    <div class="three_type ">
-                                        <a href=" ">丝塔芙</a>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </li>
-
-                </ul>
-                <!--type-->
             </div>
             <!--首页分类 end-->
         </div>
         <div class="line "></div>
 
     </div>
+
     <!-- banner区域 -->
     <div class="banner wrapper ">
         <div class="banner-t">
@@ -1003,7 +171,7 @@
         </div>
         <div class="banner-c">
             <!-- 8张大图 -->
-            <ul>
+            <!-- <ul>
                 <li style="opacity: 1;"><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/371d7f104bd8744c938bfa743658f540.jpg?w=2452&h=920" alt=""></li>
                 <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d01b4f4d20d1c909454b296f34143004.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
                 <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ca9f53f40b08b09d9254f7b6b79c34e2.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
@@ -1012,9 +180,9 @@
                 <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d01b4f4d20d1c909454b296f34143004.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
                 <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/371d7f104bd8744c938bfa743658f540.jpg?w=2452&h=920" alt=""></li>
                 <li><img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d01b4f4d20d1c909454b296f34143004.jpg?thumb=1&w=1349&h=506&f=webp&q=90" alt=""></li>
-            </ul>
+            </ul> -->
             <!-- 8个小圆圈 -->
-            <ol>
+            <!--  <ol>
                 <li class="active">1</li>
                 <li>2</li>
                 <li>3</li>
@@ -1023,10 +191,23 @@
                 <li>6</li>
                 <li>7</li>
                 <li>8</li>
-            </ol>
+            </ol> -->
             <!-- 两个左右切换箭头 -->
-            <div href="javascript:;" class="left">&lt;</div>
-            <div href="javascript:;" class="right">&gt;</div>
+            <!-- <div href="javascript:;" class="left">&lt;</div>
+            <div href="javascript:;" class="right">&gt;</div> -->
+
+            <!-- //视频直播 -->
+            <div class="living_vedio">
+                <embed id="Embed2" width="650" height="416" flashvars="file=living_sc_img/hero.flv&amp;autostart=false&amp;image=images/ss_01.jpg" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" quality="high" name="mpl" src="//player.hunantv.com/mgtv_v5_live/live.swf?channel_id=267"
+                    type="application/x-shockwave-flash">
+                </embed>
+                <!--<video src="http://klglive.imgo.tvss/nn_live/nn_x64/aWQ9S0xHTVBQMzYwJmNkbmV4X2lkPXdzX3Bob25lX2xpdmU,/KLGMPP360.m3u8" controls="controls">
+                您的浏览器不支持播放视频，请更新浏览器到IE9及以上！
+                </video>-->
+                <!--大屏尺寸为：550*400 小屏尺寸为：430*400-->
+                <!--<iframe width="550" height="400" frameborder="0" src="http://live.hunantv.com/live/player_iframe.html?liveId=267" marginheight="0" marginwidth="0" scrolling="no" name="iframeplayer" id="iframeplayer" style="z-index: 1"></iframe>-->
+            </div>
+            <!--<div class="living_tips"><i class="i_tips"></i>TV直播天天有优惠，档档有惊喜，手机下单还可以减30哦！</div>-->
         </div>
         <div class="banner-r">
             <h2>即将播出</h2>

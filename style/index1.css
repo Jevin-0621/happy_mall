@@ -184,10 +184,15 @@ fieldset {
 
 body {
   background-color: #f3f3f3;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 .header {
-  overflow: hidden;
   background-color: #fff;
 }
 
@@ -330,21 +335,53 @@ body {
 }
 
 .header-bottom {
+  height: 38px;
   margin-top: 20px;
-  overflow: hidden;
+  position: relative;
 }
-.header-bottom ul {
-  overflow: hidden;
+.header-bottom .menu {
+  position: absolute;
+  height: 50px;
 }
-
-.header-bottom ul:nth-child(1) li {
+.header-bottom .menu li {
   float: left;
   width: 170px;
   height: 40px;
   text-align: center;
   line-height: 40px;
-  font-size: 21px;
-  color: #333;
+}
+.header-bottom .menu li a {
+  color: #333 !important;
+  font-size: 16px !important;
+}
+
+.index_type {
+  width: 170px;
+  margin-top: 39px;
+  position: absolute;
+  z-index: 9;
+}
+.index_type li {
+  width: 170px;
+  font-size: 20px;
+  padding: 10px 0;
+  background-color: #fff;
+  text-align: center;
+}
+.index_type li span {
+  float: right;
+  margin-right: 20px;
+}
+
+.cartlist {
+  margin-left: 170px;
+  position: absolute;
+  width: 920px;
+  height: 470px;
+  background-color: darkgrey;
+  z-index: 999;
+  left: 0px;
+  top: 40px;
 }
 
 .line {
@@ -359,18 +396,38 @@ body {
   position: relative;
 }
 
-.index_type_ul {
+.index_type {
+  overflow: hidden;
+}
+.index_type .index_type_ul {
   position: absolute;
   top: 248px;
   background-color: #fff;
 }
-.index_type_ul .li_has_down {
+.index_type .index_type_ul .li_has_down {
   clear: both;
   border-bottom: 1px solid red;
 }
-.index_type_ul .index_type_ul .li_has_down a {
+.index_type .index_type_ul .index_type_ul .li_has_down a {
   display: block;
   margin: 10px;
+}
+
+.nav_type_list {
+  overflow: hidden;
+  position: absolute;
+  left: 500px;
+  background-color: darkgreen;
+  border: 1px solid #000;
+  width: 500px;
+  height: 1500px;
+  z-index: 99;
+  display: block;
+}
+.nav_type_list .se_type {
+  background-color: darkgoldenrod;
+  left: 1200px;
+  top: 0;
 }
 
 .banner {
@@ -594,6 +651,47 @@ body {
 }
 .list ul li span {
   display: block;
+}
+
+.r-nav {
+  width: 40px;
+  height: 100%;
+  background-color: #111;
+  position: fixed;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 14px;
+}
+.r-nav p {
+  margin-top: 20px;
+}
+.r-nav p a {
+  color: #eee;
+}
+.r-nav p a span {
+  display: block;
+  padding: 5px 0;
+  width: 25px;
+  margin-left: 10px;
+}
+.r-nav p a .iconfont {
+  font-size: 18px;
+}
+.r-nav p a .ttt {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.r-nav .car {
+  padding: 0 15px;
+  margin-left: -15px;
+}
+.r-nav .car .ttt {
+  width: 25px;
+}
+.r-nav .go-top {
+  margin-top: 400px;
 }
 
 .footer {

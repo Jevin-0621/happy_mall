@@ -1,4 +1,19 @@
 ! function($) {
+    //检测是否用户已经登录
+    if (localStorage.getItem('loginname')) {
+        $('.admin-2').show();
+        $('.admin-1').hide();
+        $('.admin-name').html(localStorage.getItem('loginname'));
+    }
+
+    //退出登录 - 删除本地存储
+    $('.layout').on('click', function() {
+        $('.admin-2').hide();
+        $('.admin-1').show();
+        localStorage.removeItem('loginname');
+    });
+
+    //二级菜单
     $('.nav-li').hover(function() {
         $(".index_type").show();
 
@@ -6,13 +21,13 @@
         $(".index_type").hide();
     });
 
-    $(".index_type_ul").hover(function() {
+    $(".index_type").hover(function() {
         $(".index_type").show();
     }, function() {
         $(".index_type").hide();
     });
 
-    $('.index_type_ul .li_has_down').hover(function() {
+    $('.index_type li').hover(function() {
         // alert(this);//li
         this.style.background = 'red';
         // this.
@@ -20,8 +35,43 @@
         this.style.background = '#fff';
 
     });
+    //cartlist
+    const $list = $('.index_type li');
+    const $cartlist = $('.cartlist');
+    // const $items = $('.cartlist item');???
+    const $items = $('.item');
+    $list.hover(function() {
+        $cartlist.show();
+        $items.eq($(this).index()).show().siblings('.item').hide();
+        // console.log($(this).index());
+        //改变右侧的大盒子的位置
+        let $scrolltop = $(window).scrollTop();
+        let $bannertop = $('.header-bottom').offset().top;
+        if ($scrolltop > $bannertop) {
+            $cartlist.css({
+                top: $scrolltop - $bannertop
+            });
+        } else {
+            $cartlist.css({
+                top: 40
+            });
+        }
+    }, function() {
+        $cartlist.hide();
+    });
+
+    //2.鼠标移入右侧的大盒子，大盒子依然显示隐藏
+    $cartlist.hover(function() {
+        $(this).show();
+    }, function() {
+        $(this).hide();
+    });
+
+
+
+
     //轮播图
-    var $lists = $('.banner-c ul li');
+    /*  var $lists = $('.banner-c ul li');
     var $dots = $('ol li')
     var $left = $('.left');
     var $right = $('.right');
@@ -81,5 +131,8 @@
         $timer = setInterval(function() {
             $auto();
         }, 2000);
-    })
+    }); //
+ */
+
+
 }(jQuery);

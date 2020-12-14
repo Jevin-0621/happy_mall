@@ -3,7 +3,6 @@ $font13:13px;
 $max-width:100%;
 $color-red:red;
 .header {
-    overflow: hidden;
     background-color: #fff;
 }
 
@@ -158,23 +157,56 @@ $color-red:red;
 }
 
 .header-bottom {
+    height: 38px;
     margin-top: 20px;
-    overflow: hidden;
-    ul {
-        overflow: hidden;
+    // overflow: hidden;
+    position: relative;
+    .menu {
+        position: absolute;
+        height: 50px;
+        // overflow: hidden;
+        li {
+            float: left;
+            width: 170px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            a {
+                color: #333 !important;
+                font-size: 16px !important;
+            }
+        }
     }
 }
 
-.header-bottom ul:nth-child(1) {
+.index_type {
+    width: 170px;
+    margin-top: 39px;
+    position: absolute;
+    z-index: 9;
     li {
-        float: left;
         width: 170px;
-        height: 40px;
+        font-size: 20px;
+        padding: 10px 0;
+        background-color: #fff;
         text-align: center;
-        line-height: 40px;
-        font-size: 21px;
-        color: #333;
+        span {
+            float: right;
+            margin-right: 20px;
+        }
     }
+}
+
+.cartlist {
+    margin-left: 170px;
+    position: absolute;
+    width: 920px;
+    height: 470px;
+    background-color: darkgrey;
+    z-index: 999;
+    left: 0px;
+    top: 40px;
+    // display: none;
 }
 
 .line {
@@ -189,18 +221,39 @@ $color-red:red;
     position: relative;
 }
 
-.index_type_ul {
-    position: absolute;
-    top: 248px;
-    background-color: #fff;
-    .li_has_down {
-        clear: both;
-        // z-index: 3;
-        // zoom: 1;
-        border-bottom: 1px solid $color-red;
+.index_type {
+    overflow: hidden;
+    .index_type_ul {
+        position: absolute;
+        top: 248px;
+        background-color: #fff;
+        .li_has_down {
+            clear: both;
+            // z-index: 3;
+            // zoom: 1;
+            border-bottom: 1px solid $color-red;
+        }
+        .index_type_ul .li_has_down a {
+            display: block;
+            margin: 10px;
+        }
     }
-    .index_type_ul .li_has_down a {
-        display: block;
-        margin: 10px;
+}
+
+.nav_type_list {
+    overflow: hidden;
+    position: absolute;
+    left: 500px;
+    background-color: darkgreen;
+    border: 1px solid #000;
+    width: 500px;
+    height: 1500px;
+    z-index: 99;
+    display: block;
+    .se_type {
+        background-color: darkgoldenrod;
+        // position: absolute;
+        left: 1200px;
+        top: 0;
     }
 }
