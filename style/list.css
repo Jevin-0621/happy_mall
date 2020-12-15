@@ -1,0 +1,86 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} */
+
+.list {
+    width: 1160px;
+    margin: 0 auto;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.list li {
+    width: 200px;
+    padding: 10px;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    height: 310px;
+    position: relative;
+}
+
+.list li p {
+    width: 200px;
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.list li img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.list li span {
+    display: block;
+}
+
+.list-location {
+    height: 57px;
+    line-height: 57px;
+    font-size: 14px;
+    font-family: "PingFangSC-Regular", "微软雅黑", "宋体", "arial", "Hiragino Sans GB", "Microsoft Yahei", "Tahoma", "Helvetica", "STHeiti";
+    border-bottom: 1px solid #ccc;
+    width: 1070px;
+}
+
+.list-location a {
+    color: #444444;
+}
+
+.sort-box {
+    /* padding: 10px 0; */
+    border: 1px solid #e4e4e4;
+    width: 1070px;
+    margin: 20px 0;
+}
+
+.sort {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fff;
+    color: #df0010;
+    padding: 10px 0;
+}
+
+button {
+    text-align: center;
+    width: 86px;
+    height: 30px;
+    border-right: 1px solid #e4e4e4;
+    background-color: #f3f3f3;
+    border: none;
+}
+
+button span {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #df0010;
+    padding: 0 5px;
+}

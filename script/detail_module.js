@@ -8,7 +8,7 @@ define(['jcookie'], () => {
             }
             //2.将sid传给后端，后端根据对应的sid返回不同的数据。
             $.ajax({
-                url: 'http://localhost/dashboard/Javascript/happy_mall/php/detail.php',
+                url: 'http://10.31.161.68/dashboard/Javascript/happy_mall/php/detail.php',
                 data: {
                     sid: $sid
                 },

@@ -29,10 +29,13 @@
 
     $('.index_type li').hover(function() {
         // alert(this);//li
-        this.style.background = 'red';
+        this.style.color = 'rgba(244,72,20,1)';
+        this.style.background = '#fff';
+
         // this.
     }, function() {
-        this.style.background = '#fff';
+        this.style.background = 'rgba(244,72,20,1)';
+        this.style.color = '#fff';
 
     });
     //cartlist
@@ -67,7 +70,23 @@
         $(this).hide();
     });
 
-
+    //tab切换
+    var $lists = $('.menu li').not('.active1');
+    // var $ullists = $('.box ul');
+    var $timer = null;
+    console.log($lists);
+    // console.log($ullists);
+    $lists.on('click', function() {
+        $timer = setTimeout(() => {
+            $(this).addClass('active1').siblings('li').removeClass('active1');
+            // $ullists.eq($(this).index()).addClass('show').siblings('ul').removeClass('show');
+        }, 100)
+    });
+    $lists.on('mouseleave', function() {
+        // $lists.on('mouseout', function() {
+        // console.log(11);
+        clearTimeout($timer);
+    });
 
 
     //轮播图

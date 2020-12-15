@@ -1,0 +1,12 @@
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top .top_logo {
+    float: left;
+}
+
+.top .top_right {
+    float: right;
+}

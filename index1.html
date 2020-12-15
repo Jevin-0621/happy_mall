@@ -9,12 +9,11 @@
     <meta name="description" content="快乐购商城">
     <link rel="stylesheet" href="./style/index1.css">
     <link rel="stylesheet" href="./font_ne2iuwysss/iconfont.css">
-    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js"></script> -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="list_module"></script>
     <!-- 
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
   -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script> -->
 
 
 </head>
@@ -29,7 +28,7 @@
             </a>
         </p>
         <p class="car">
-            <a href="">
+            <a href="./cart.html">
                 <span class="iconfont icon-gouwuche"></span>
                 <span class="ttt">购物车</span>
             </a>
@@ -59,7 +58,7 @@
                 </div>
                 <!-- 已登录 -->
                 <div class="h_t_l admin-2">
-                    <div class="login_1"> <span class="h_t_l_wz admin-name">{}</span>
+                    <div class="login_1"> <span class="h_t_l_wz admin-name"></span>
                         <span class="h_t_l_wz">欢迎您来到快乐购！</span>
                         <span class="layout">退出</span>
                         <!-- <a href="./login.html" target="_blank" class="a_login">[登录] </a>
@@ -95,13 +94,16 @@
 
         <div class="header-middle wrapper ">
             <div class="header-m-l">
-                <img src="https://ecimg.happigo.com/resource/web/new_web/images/logo.png" style="width:146px;height:75px">
+                <a href="./index1.html">
+                    <img src="https://ecimg.happigo.com/resource/web/new_web/images/logo.png" style="width:146px;height:75px">
+                </a>
             </div>
             <div class="header-m-c">
-                <p class="search"><span>面膜</span><span>搜索</span></p>
+                <p class="search"><span>面膜</span><span style="color: #fff;">搜索</span></p>
                 <p>
                     <a href="">牛奶</a>
                     <a href="">口红</a>
+                    <a href="" style="color: #e00;">爆品19元起</a>
                     <a href="">雅诗兰黛</a>
                     <a href="">保温杯</a>
                 </p>
@@ -112,25 +114,26 @@
         </div>
         <div class="header-bottom wrapper ">
             <ul class="menu">
-                <li class="nav-li"><a href=""> 所有分类</a></li>
+                <li class="nav-li active1" style="background-color: #e00;"><a href=""> 所有分类</a></li>
                 <li><a href="javascript:;">TV精选</a></li>
                 <li><a href="javascript:;">商品推荐</a></li>
                 <li><a href="javascript:;">跨境美妆</a></li>
-                <li><a href="javascript:;">地方特产</a></li>
+                <!-- <li><a href="javascript:;">地方特产</a></li> -->
             </ul>
             <!--首页分类-->
-            <ul class="index_type" style="display: none;">
-                <li>个护美妆<span>&gt;</span></li>
-                <li>食品健康<span>&gt;</span></li>
-                <li>餐厨日用<span>&gt;</span></li>
-                <li>服饰配饰<span>&gt;</span></li>
-                <li>布艺家纺<span>&gt;</span></li>
-                <li>家电数码<span>&gt;</span></li>
-                <li>品牌坊<span>&gt;</span></li>
-                <li>品牌坊<span>&gt;</span></li>
-                <li>品牌坊<span>&gt;</span></li>
-            </ul>
-
+            <div class="box">
+                <ul class="index_type" style="display: none;">
+                    <li>个护美妆<span>&gt;</span></li>
+                    <li>食品健康<span>&gt;</span></li>
+                    <li>餐厨日用<span>&gt;</span></li>
+                    <li>服饰配饰<span>&gt;</span></li>
+                    <li>布艺家纺<span>&gt;</span></li>
+                    <li>家电数码<span>&gt;</span></li>
+                    <li>品牌坊<span>&gt;</span></li>
+                    <li>品牌坊<span>&gt;</span></li>
+                    <li>品牌坊<span>&gt;</span></li>
+                </ul>
+            </div>
             <div class="cartlist" style="display: none;">
                 <div class="item"><a href="list.html">模拟跳转商品列表页</a></div>
                 <div class="item">第二块内容</div>
@@ -146,7 +149,6 @@
             <!--首页分类 end-->
         </div>
         <div class="line "></div>
-
     </div>
 
     <!-- banner区域 -->
@@ -496,8 +498,10 @@
     <!--  <div class="footer wrapper ">
 
     </div> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <script src="./script/index.js"></script>
-    <script src="./script/list_module.js"></script>
+    <!-- <script src="./script/list_module.js"></script> -->
 </body>
 
 </html>

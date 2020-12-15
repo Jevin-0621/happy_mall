@@ -75,15 +75,20 @@
     text-align: center;
     padding-top: 200px;
     font-size: 14px;
+    font-family: "PingFangSC-Regular", "微软雅黑", "宋体", "arial", "Hiragino Sans GB", "Microsoft Yahei", "Tahoma", "Helvetica", "STHeiti";
+    -webkit-font-smoothing: antialiased;
+    vertical-align: baseline;
+    font-size: 12px;
     p {
         margin-top: 20px;
+        padding: 5px 0;
         a {
             color: #eee;
             span {
                 display: block;
                 padding: 5px 0;
-                width: 25px;
-                margin-left: 10px;
+                width: 28px;
+                margin-left: 5px;
             }
             .iconfont {
                 font-size: 18px;
@@ -97,8 +102,18 @@
     .car {
         padding: 0 15px;
         margin-left: -15px;
+        font-size: 14px;
+        font-family: "PingFangSC-Regular", "微软雅黑", "宋体", "arial", "Hiragino Sans GB", "Microsoft Yahei", "Tahoma", "Helvetica", "STHeiti";
+        -webkit-font-smoothing: antialiased;
+        vertical-align: baseline;
+        font-size: 12px;
+        .iconfont {
+            font-size: 23px;
+        }
         .ttt {
-            width: 25px;
+            width: 17px;
+            padding: 0 6px;
+            color: #fff;
         }
     }
     .go-top {

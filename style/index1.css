@@ -360,13 +360,16 @@ html {
   margin-top: 39px;
   position: absolute;
   z-index: 9;
+  color: #fff;
+  background-color: #f44814;
 }
 .index_type li {
   width: 170px;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #f44814;
   text-align: center;
+  font-family: "PingFangSC-Regular", "微软雅黑", "宋体", "arial", "Hiragino Sans GB", "Microsoft Yahei", "Tahoma", "Helvetica", "STHeiti";
 }
 .index_type li span {
   float: right;
@@ -391,9 +394,12 @@ html {
 }
 
 .nav-li {
-  background-color: red;
   line-height: 40px;
   position: relative;
+}
+
+.active1 {
+  background-color: #f44814;
 }
 
 .index_type {
@@ -476,8 +482,8 @@ html {
   padding: 0 14px;
   margin: 8px 0;
   font-size: 13px;
-  font-weight: 500;
-  color: #f00;
+  font-weight: bold;
+  color: #DF0010;
 }
 
 .t1 {
@@ -663,9 +669,14 @@ html {
   text-align: center;
   padding-top: 200px;
   font-size: 14px;
+  font-family: "PingFangSC-Regular", "微软雅黑", "宋体", "arial", "Hiragino Sans GB", "Microsoft Yahei", "Tahoma", "Helvetica", "STHeiti";
+  -webkit-font-smoothing: antialiased;
+  vertical-align: baseline;
+  font-size: 12px;
 }
 .r-nav p {
   margin-top: 20px;
+  padding: 5px 0;
 }
 .r-nav p a {
   color: #eee;
@@ -673,8 +684,8 @@ html {
 .r-nav p a span {
   display: block;
   padding: 5px 0;
-  width: 25px;
-  margin-left: 10px;
+  width: 28px;
+  margin-left: 5px;
 }
 .r-nav p a .iconfont {
   font-size: 18px;
@@ -686,9 +697,19 @@ html {
 .r-nav .car {
   padding: 0 15px;
   margin-left: -15px;
+  font-size: 14px;
+  font-family: "PingFangSC-Regular", "微软雅黑", "宋体", "arial", "Hiragino Sans GB", "Microsoft Yahei", "Tahoma", "Helvetica", "STHeiti";
+  -webkit-font-smoothing: antialiased;
+  vertical-align: baseline;
+  font-size: 12px;
+}
+.r-nav .car .iconfont {
+  font-size: 23px;
 }
 .r-nav .car .ttt {
-  width: 25px;
+  width: 17px;
+  padding: 0 6px;
+  color: #fff;
 }
 .r-nav .go-top {
   margin-top: 400px;

@@ -1,4 +1,8 @@
 <?php
+//cors解决跨越:所有的用户都可以访问。
+header('Access-Control-Allow-Origin:*');  //允许任意的域名访问
+header('Access-Control-Allow-Method:POST,GET'); //允许请求方式是get和post
+
 //1.连接数据库
 include "conn.php";
 //3.获取前端传入的用户名做唯一值的检测。
@@ -20,5 +24,5 @@ if(isset($_POST['submit'])){//前端点击了submit提交按钮，后端开始�
     $email = $_POST['email'];
     $conn->query("insert registry values(null,'$user','$pass','$email',NOW())");//将数据传递给数据库。
     //一旦数据提交成功，回到前端的登录页面
-    header('location:http://localhost/dashboard/Javascript/happy_mall/login.html');
+    header('location:http://10.31.161.68/dashboard/Javascript/happy_mall/login.html');
 }

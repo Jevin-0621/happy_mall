@@ -1,4 +1,8 @@
 <?php
+//cors解决跨越:所有的用户都可以访问。
+header('Access-Control-Allow-Origin:*');  //允许任意的域名访问
+header('Access-Control-Allow-Method:POST,GET'); //允许请求方式是get和post
+
 include "conn.php";
 
 
@@ -20,5 +24,5 @@ if (isset($_POST['submit'])) {
     $repass = sha1($_POST['repass']);
     $email = $_POST['email'];
     $conn->query("insert registry1903 values(null,'$username','$password','$repass','$email',NOW())");
-    header('location:http://localhost/dashboard/Javascript/project/happy_mall/src/login.html');
+    header('location:http://10.31.161.68/dashboard/Javascript/project/happy_mall/src/login.html');
 }
