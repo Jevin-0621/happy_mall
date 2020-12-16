@@ -36,6 +36,8 @@ define(['jcookie'], () => {
                 });
             }
 
+            var $totalprice = $('.totalprice');
+
         }
     }
 });

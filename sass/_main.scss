@@ -1,6 +1,7 @@
-.living-list {
+.pre_list {
     a {
         display: block;
+        text-align: center;
         span {
             display: block;
         }
@@ -9,6 +10,39 @@
         border-top: 2px solid #f00;
         border-left: 2px solid #f00;
         border-right: 2px solid #f00;
+        border-bottom: 2px solid #fff;
+        margin-left: 40px;
+        span {
+            color: #df0010;
+            font-weight: bold;
+            margin: 0 auto;
+            width: 50px;
+            padding-left: 10px;
+        }
+    }
+    .banner-t {
+        overflow: hidden;
+        p {
+            line-height: 32px;
+            margin: 10px auto 0;
+            overflow: hidden;
+            i,
+            span,
+            a {
+                float: left;
+                display: block;
+            }
+            a {
+                width: 80px;
+                span {
+                    line-height: 16px;
+                    text-align: center;
+                }
+            }
+        }
+        p+span {
+            line-height: 32px;
+        }
     }
 }
 
@@ -45,6 +79,7 @@
                 span {
                     font-size: 22px;
                     color: #df0010;
+                    font-weight: bold;
                 }
             }
             p {
@@ -52,6 +87,8 @@
                 height: 48px;
                 line-height: 24px;
                 overflow: hidden;
+                font-size: 14px;
+                color: #333;
             }
             img {
                 width: 200px;

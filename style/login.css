@@ -1,6 +1,6 @@
-.wrapper {
-    width: 1000px;
-    margin: 0 auto;
+.top {
+    padding: 30px 0 19px;
+    overflow: hidden;
 }
 
 .top .top_logo {
@@ -9,4 +9,87 @@
 
 .top .top_right {
     float: right;
+}
+
+.login {
+    width: 980px;
+    margin: 0 0px 0 400px;
+    padding: 0 25px;
+    overflow: hidden;
+}
+
+.login_box {
+    width: 400px;
+    float: right;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 0 0 0 40px;
+    margin-right: 20px;
+}
+
+.login_box_t {
+    margin: 33px 100px 20px 0;
+    width: 350px;
+}
+
+.login_box_t h2,
+.loginrtop {
+    float: left;
+}
+
+.login_box_t h2 {
+    height: 38px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #F11D20
+}
+
+.login_box .login_box_t .loginrtop {
+    width: 150px;
+    color: #8c8c8c;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 80px;
+}
+
+.login_box .login_box_t a {
+    text-decoration: none;
+    color: #c41f3a;
+}
+
+fieldset p {
+    margin: 30px 0;
+}
+
+fieldset input {
+    width: 200px;
+    height: 22px;
+    font-size: 14px;
+    padding: 6px 0 6px 6px;
+}
+
+.login_r_fixed {
+    position: fixed;
+    right: 300px;
+    top: 200px;
+}
+
+#login,
+#submit {
+    display: block;
+    width: 267px;
+    height: 40px;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    background-color: #F11D20;
+    text-align: center;
+    font-size: 14px;
+    font-family: 宋体;
+    font-weight: bold;
+}
+
+.footer {
+    margin: 500px 0 0 0;
+    text-align: center;
 }

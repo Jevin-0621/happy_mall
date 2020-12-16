@@ -17,6 +17,10 @@ input {
     border: 0;
 }
 
+.goodsinfo {
+    height: auto;
+}
+
 .wrap {
     float: left;
     position: relative;
@@ -83,13 +87,16 @@ input {
     line-height: 56px;
     text-align: center;
     background: #fff;
+    opacity: 0.5;
 }
 
 #list {
     float: left;
-    margin-left: 18px;
+    margin-left: 19px;
     width: 372px;
     position: relative;
+    height: 54px;
+    overflow: hidden;
 }
 
 #list li {
@@ -143,7 +150,7 @@ input {
 
 .goodsinfo {
     margin: 50px auto;
-    overflow: hidden;
+    height: 470px;
 }
 
 .goodsinfo-img {

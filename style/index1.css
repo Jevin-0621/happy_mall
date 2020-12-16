@@ -86,6 +86,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: "PingFangSC-Regular", "微软雅黑", "宋体", "arial", "Hiragino Sans GB", "Microsoft Yahei", "Tahoma", "Helvetica", "STHeiti";
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -601,16 +602,50 @@ html {
   color: black;
 }
 
-.living-list a {
+.pre_list a {
+  display: block;
+  text-align: center;
+}
+.pre_list a span {
   display: block;
 }
-.living-list a span {
-  display: block;
-}
-.living-list .active {
+.pre_list .active {
   border-top: 2px solid #f00;
   border-left: 2px solid #f00;
   border-right: 2px solid #f00;
+  border-bottom: 2px solid #fff;
+  margin-left: 40px;
+}
+.pre_list .active span {
+  color: #df0010;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 50px;
+  padding-left: 10px;
+}
+.pre_list .banner-t {
+  overflow: hidden;
+}
+.pre_list .banner-t p {
+  line-height: 32px;
+  margin: 10px auto 0;
+  overflow: hidden;
+}
+.pre_list .banner-t p i,
+.pre_list .banner-t p span,
+.pre_list .banner-t p a {
+  float: left;
+  display: block;
+}
+.pre_list .banner-t p a {
+  width: 80px;
+}
+.pre_list .banner-t p a span {
+  line-height: 16px;
+  text-align: center;
+}
+.pre_list .banner-t p + span {
+  line-height: 32px;
 }
 
 .goods-list-1 ul li {
@@ -643,12 +678,15 @@ html {
 .list ul li a span {
   font-size: 22px;
   color: #df0010;
+  font-weight: bold;
 }
 .list ul li p {
   width: 200px;
   height: 48px;
   line-height: 24px;
   overflow: hidden;
+  font-size: 14px;
+  color: #333;
 }
 .list ul li img {
   width: 200px;
