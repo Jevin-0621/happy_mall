@@ -382,7 +382,7 @@ html {
   position: absolute;
   width: 920px;
   height: 470px;
-  background-color: darkgrey;
+  background-color: #fff;
   z-index: 999;
   left: 0px;
   top: 40px;
@@ -604,7 +604,7 @@ html {
 
 .pre_list a {
   display: block;
-  text-align: center;
+  padding: 0 15px;
 }
 .pre_list a span {
   display: block;
@@ -614,7 +614,6 @@ html {
   border-left: 2px solid #f00;
   border-right: 2px solid #f00;
   border-bottom: 2px solid #fff;
-  margin-left: 40px;
 }
 .pre_list .active span {
   color: #df0010;
@@ -654,6 +653,9 @@ html {
   float: left;
   margin-right: 10px;
   margin-bottom: 15px;
+}
+.goods-list-1 ul li:hover {
+  border: 1px solid #df0010;
 }
 
 .list {
@@ -751,6 +753,51 @@ html {
 }
 .r-nav .go-top {
   margin-top: 400px;
+}
+
+.flow-top {
+  width: 99%;
+  height: 50px;
+  border: 1px solid #333;
+  background-color: #242424;
+  line-height: 50px;
+  z-index: 55;
+  position: fixed;
+  display: none;
+  top: 0;
+}
+.flow-top .wrapper .to,
+.flow-top .wrapper a {
+  float: left;
+}
+.flow-top .wrapper a {
+  display: inline-block;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #ccc;
+  padding: 11px 0;
+}
+.flow-top .wrapper a span {
+  display: block;
+  margin: 0 50px;
+}
+.flow-top .wrapper .active {
+  background-color: #eee;
+}
+.flow-top .wrapper .active span:nth-child(1) {
+  color: #fff;
+  background-color: #df0010;
+}
+.flow-top .wrapper .active span:nth-child(2) {
+  color: #df0010;
+}
+.flow-top .wrapper .to {
+  display: inline-block;
+  width: 24px;
+  font-size: 20px;
+  color: #ddd;
+  margin-right: 20px;
 }
 
 .footer {

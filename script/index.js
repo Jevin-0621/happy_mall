@@ -74,7 +74,7 @@
     var $lists = $('.menu li').not('.active1');
     // var $ullists = $('.box ul');
     var $timer = null;
-    console.log($lists);
+    // console.log($lists);
     // console.log($ullists);
     $lists.on('click', function() {
         $timer = setTimeout(() => {
@@ -88,6 +88,32 @@
         clearTimeout($timer);
     });
 
+    //回顶部
+    $('.icon-shengdanjianhuahuidaodingbu').on('click', function() {
+        $('html').animate({
+            scrollTop: 0
+        });
+    });
+
+
+    //出现吸顶效果
+    $(window).on('scroll', function() {
+        // console.log($(window).scrollTop())
+        if ($(window).scrollTop() >= 900) {
+            $('.flow-top').show();
+        } else {
+            $('.flow-top').hide();
+        }
+    })
+
+    $('.flow-top a').on('click', function() {
+        // console.log(this);
+        $(this).addClass('active').siblings('a').removeClass('active');
+    })
+    $('.pre_list a').on('click', function() {
+        // console.log(this);
+        $(this).addClass('active').siblings('a').removeClass('active');
+    })
 
     //轮播图
     /*  var $lists = $('.banner-c ul li');

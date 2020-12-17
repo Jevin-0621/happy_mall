@@ -19,7 +19,7 @@ define(['pagination', 'jlazyload'], function() {
                 url: 'http://10.31.161.68/dashboard/Javascript/happy_mall/php/listdata1.php',
                 dataType: 'json'
             }).done(function(datalist) {
-                console.log(datalist);
+                // console.log(datalist);
                 data = datalist.pagedata; //获取接口里面数据
                 let $strhtml = '';
                 $.each(data, function(index, value) {
@@ -42,7 +42,7 @@ define(['pagination', 'jlazyload'], function() {
                     $array_default[index] = $(this); //排序前
                     $array[index] = $(this); //排序后
                 });
-                console.log($array_default);
+                // console.log($array_default);
 
 
                 //2.进行分页设置(html页面载入分页的结构)
@@ -82,7 +82,7 @@ define(['pagination', 'jlazyload'], function() {
                                 $array_default[index] = $(this); //排序前
                                 $array[index] = $(this); //排序后
                             });
-                            console.log($array_default);
+                            // console.log($array_default);
                         });
                     }
                 });

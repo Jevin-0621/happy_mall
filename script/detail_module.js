@@ -137,6 +137,10 @@ define(['jcookie'], () => {
                 if ($.cookie('cookiesid') && $.cookie('cookienum')) {
                     arrsid = $.cookie('cookiesid').split(',');
                     arrnum = $.cookie('cookienum').split(',');
+                } else {
+                    //cookie不存在，清空数组
+                    $arrsid = [];
+                    $arrnum = [];
                 }
             }
             //上面的函数获取cookie值，并且转换成数组，方便判断是否是第一次。
@@ -157,7 +161,7 @@ define(['jcookie'], () => {
                     arrnum[$index] = parseInt(arrnum[$index]) + parseInt($('#count').val()); //重新赋值
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
-                alert('按钮被点击了');
+                alert('添加成功');
             });
         }
     }

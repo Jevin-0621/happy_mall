@@ -1,7 +1,8 @@
 .pre_list {
     a {
         display: block;
-        text-align: center;
+        // text-align: center;
+        padding: 0 15px;
         span {
             display: block;
         }
@@ -11,7 +12,7 @@
         border-left: 2px solid #f00;
         border-right: 2px solid #f00;
         border-bottom: 2px solid #fff;
-        margin-left: 40px;
+        // margin-left: 40px;
         span {
             color: #df0010;
             font-weight: bold;
@@ -55,6 +56,9 @@
             float: left;
             margin-right: 10px;
             margin-bottom: 15px;
+        }
+        li:hover {
+            border: 1px solid #df0010;
         }
     }
 }
@@ -155,5 +159,53 @@
     }
     .go-top {
         margin-top: 400px;
+    }
+}
+
+.flow-top {
+    width: 99%;
+    height: 50px;
+    border: 1px solid #333;
+    background-color: #242424;
+    line-height: 50px;
+    z-index: 55;
+    position: fixed;
+    display: none;
+    top: 0;
+    .wrapper {
+        .to,
+        a {
+            float: left;
+        }
+        a {
+            display: inline-block;
+            line-height: 16px;
+            font-size: 14px;
+            font-weight: 900;
+            // width: 130px;
+            color: #ccc;
+            padding: 11px 0;
+            span {
+                display: block;
+                margin: 0 50px;
+            }
+        }
+        .active {
+            span:nth-child(1) {
+                color: #fff;
+                background-color: #df0010;
+            }
+            background-color: #eee;
+            span:nth-child(2) {
+                color: #df0010;
+            }
+        }
+        .to {
+            display: inline-block;
+            width: 24px;
+            font-size: 20px;
+            color: #ddd;
+            margin-right: 20px;
+        }
     }
 }
