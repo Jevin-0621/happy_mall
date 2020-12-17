@@ -3,6 +3,12 @@
     margin: 0px;
 }
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -221,7 +227,7 @@ input {
 }
 
 .box {
-    width: 200px;
+    width: 150px;
     height: 30px;
     line-height: 30px;
     text-align: center;

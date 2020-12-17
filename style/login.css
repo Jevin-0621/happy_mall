@@ -1,3 +1,9 @@
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .top {
     padding: 30px 0 19px;
     overflow: hidden;
@@ -19,12 +25,12 @@
 }
 
 .login_box {
-    width: 400px;
+    width: 600px;
     float: right;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
     padding: 0 0 0 40px;
-    margin-right: 20px;
+    margin-right: 20%;
 }
 
 .login_box_t {
@@ -70,7 +76,7 @@ fieldset input {
 
 .login_r_fixed {
     position: fixed;
-    right: 300px;
+    right: 50px;
     top: 200px;
 }
 

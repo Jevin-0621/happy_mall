@@ -1,7 +1,7 @@
 ! function($) {
     const $username = $('#username');
     const $password = $('#password');
-    const $login = $('#login'); //登录按钮
+    const $login = $('.denglu'); //登录按钮
 
     $login.on('click', function() {
         $.ajax({
@@ -12,7 +12,9 @@
                 pass: $password.val()
             }
         }).done(function(data) {
+
             if (!data) { //登录失败
+
                 alert('用户名或者密码有误!');
                 $password.val(''); //密码清空
             } else { //登录成功

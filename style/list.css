@@ -4,6 +4,12 @@
     list-style: none;
 } */
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .list {
     width: 1160px;
     margin: 0 auto;
